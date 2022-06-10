@@ -18,8 +18,8 @@ Breakpoint argument choices
   --color-black: hsl(0, 0%, 10%);
   --color-white: hsl(0, 0%, 97%);
   --color-gray: hsl(0, 1%, 35%);
-  --font-primary: "Bebas Neue", Sans-serif;
-  --font-secondary: "Inter", Sans-serif;
+  --font-primary: "Inter", Sans-serif;
+  --font-secondary: "Bebas Neue", Sans-serif;
 }
 
 @keyframes moveInLeft {
@@ -65,7 +65,7 @@ html {
   font-size: 62.5%;
   min-height: 100vh;
   background-color: var(--color-black);
-  font-family: var(--font-display);
+  font-family: var(--font-primary);
 }
 @media only screen and (max-width: 75em) {
   html {
@@ -94,6 +94,8 @@ p {
 
 a {
   text-decoration: none;
+  color: var(--color-white);
+  font-weight: 800;
 }
 
 .heading-1 {
@@ -145,6 +147,21 @@ a {
 }
 .u-margin-bottom-big {
   margin-bottom: 8rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 8rem;
+}
+.header__list {
+  display: flex;
+}
+.header .header__list-item {
+  padding: 0 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
