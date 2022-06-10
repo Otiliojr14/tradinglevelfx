@@ -1,0 +1,150 @@
+/* Media Queries 
+0 - 600px Phone
+600 - 900px Tablet Portrait
+900 - 1200px Tablet Landscape
+[1200 - 1800] Default size
+1800px + Big desktop
+Breakpoint argument choices
+- phone
+- tab-port
+- tab-land
+- big-desktop
+1em - 16px
+*/
+:root {
+  --color-primary: hsl(152, 100%, 20%);
+  --color-primary-dark: hsl(152, 95%, 15%);
+  --color-primary-light: hsl(152, 98%, 25%);
+  --color-black: hsl(0, 0%, 10%);
+  --color-white: hsl(0, 0%, 97%);
+  --color-gray: hsl(0, 1%, 35%);
+  --font-primary: "Bebas Neue", Sans-serif;
+  --font-secondary: "Inter", Sans-serif;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  min-height: 100vh;
+  background-color: var(--color-black);
+  font-family: var(--font-display);
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading-1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.heading-2 {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.heading-3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.heading-4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.heading-5 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.u-white {
+  color: var(--color-white);
+}
+
+.u-black {
+  color: var(--color-black);
+}
+
+.u-container {
+  width: 90%;
+  max-width: 115rem;
+  margin: 0 auto;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+/*# sourceMappingURL=style.css.map */
