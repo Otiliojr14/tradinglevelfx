@@ -88,8 +88,18 @@ body {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: var(--color-white);
+}
+
 p {
   font-size: 1.8rem;
+  color: var(--color-white);
 }
 
 a {
@@ -98,8 +108,12 @@ a {
   font-weight: 800;
 }
 
+ul {
+  list-style: none;
+}
+
 .heading-1 {
-  font-size: 4.8rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 
@@ -149,7 +163,28 @@ a {
   margin-bottom: 8rem;
 }
 
+.u-margin-sides-short {
+  max-width: 120rem;
+  margin: auto;
+  width: 95%;
+}
+
+.u-margin-sides-medium {
+  max-width: 114rem;
+  margin: auto;
+  width: 90%;
+}
+
 .header {
+  background-image: url(../img/hero-stock.jpg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header__bar {
+  background: hsl(0deg, 0%, 10%);
+}
+.header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -160,8 +195,18 @@ a {
 .header__list {
   display: flex;
 }
-.header .header__list-item {
+.header__list-item {
   padding: 0 2rem;
+}
+.header__hero {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, hsl(0deg, 0%, 10%) 30%, hsla(0deg, 0%, 10%, 0));
+}
+.header__title {
+  width: 50%;
+  text-align: end;
 }
 
 /*# sourceMappingURL=style.css.map */

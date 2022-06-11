@@ -29,12 +29,26 @@ body {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: var(--color-white);
+}
+
 p {
   font-size: 1.8rem;
+  color: var(--color-white);
 }
 
 a {
   text-decoration: none;
   color: var(--color-white);
   font-weight: 800;
+}
+
+ul {
+  list-style: none;
 }

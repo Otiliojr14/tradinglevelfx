@@ -1,0 +1,43 @@
+.header {
+  background-image: url(../img/hero-stock.jpg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__bar {
+    background: hsla(0, 0%, 10%, 100%);
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 8rem;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__list-item {
+    padding: 0 2rem;
+  }
+
+  &__hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+      to right,
+      hsla(0, 0%, 10%, 100%) 30%,
+      hsla(0, 0%, 10%, 0%)
+    );
+  }
+  &__title {
+    width: 50%;
+    text-align: end;
+  }
+}
