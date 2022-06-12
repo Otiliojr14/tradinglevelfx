@@ -1,0 +1,7 @@
+.button {
+  padding: 1rem 2rem;
+  &-link {
+    background-color: var(--color-primary);
+    text-transform: uppercase;
+  }
+}

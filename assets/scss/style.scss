@@ -6,9 +6,12 @@
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
+// Component folder
+@import "components/button";
 
 // Layout folder
 @import "layout/header";
+@import "layout/footer";
 
 // Pages folder
 @import "pages/index";
