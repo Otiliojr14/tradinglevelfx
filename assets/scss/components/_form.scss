@@ -1,0 +1,33 @@
+.form {
+  &__box {
+    padding: 2rem;
+    border: 1px solid white;
+    text-align: center;
+  }
+
+  &__label {
+    margin-bottom: 1rem;
+  }
+
+  &__input-box {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  &__input {
+    padding: 1rem;
+  }
+
+  &__button {
+    border: none;
+    font-weight: bold;
+    font-family: Inter;
+    font-size: 1.7rem;
+    color: var(--color-white);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

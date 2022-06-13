@@ -93,7 +93,8 @@ h2,
 h3,
 h4,
 h5,
-p {
+p,
+label {
   color: var(--color-white);
 }
 
@@ -191,9 +192,43 @@ ul {
 .button-link {
   background-color: var(--color-primary);
   text-transform: uppercase;
+  transition: background-color 0.2s;
+}
+.button-link:hover {
+  background-color: var(--color-primary-light);
+}
+.button:hover {
+  cursor: pointer;
 }
 
-.header {
+.form__box {
+  padding: 2rem;
+  border: 1px solid white;
+  text-align: center;
+}
+.form__label {
+  margin-bottom: 1rem;
+}
+.form__input-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+.form__input {
+  padding: 1rem;
+}
+.form__button {
+  border: none;
+  font-weight: bold;
+  font-family: Inter;
+  font-size: 1.7rem;
+  color: var(--color-white);
+}
+.form__button:hover {
+  cursor: pointer;
+}
+
+.header-home {
   background-image: url(../img/hero-stock.jpg);
   height: 100vh;
   display: flex;
@@ -259,6 +294,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: hsl(0deg, 0%, 0%);
 }
 .about__title {
   text-align: start;
@@ -294,6 +330,18 @@ ul {
   margin: auto;
   width: 80rem;
   margin-bottom: 3rem;
+}
+
+.access {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.access-main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

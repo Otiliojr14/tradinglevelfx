@@ -16,22 +16,24 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Home - Trading Level Fx</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header header-home">
       <div class="header__bar">
         <nav class="header__nav u-margin-sides-short">
-          <figure class="header__logo">
-            <img src="./assets/img/logo-white.svg" alt="logo" />
-          </figure>
+          <a href="index.html"
+            ><figure class="header__logo">
+              <img src="./assets/img/logo-white.svg" alt="logo" /></figure
+          ></a>
           <ul class="header__list">
             <li class="header__list-item">
-              <a href="#" class="header__list-link">Acceder</a>
+              <a href="login.html" class="header__list-link">Acceder</a>
             </li>
             <li class="header__list-item">
-              <a href="#" class="header__list-link button button-link"
+              <a href="join.html" class="header__list-link button button-link"
                 >Unirse</a
               >
             </li>
@@ -40,7 +42,7 @@
       </div>
       <div class="header__hero">
         <section class="header__info u-margin-sides-medium">
-          <h1 class="header__title heading-1">
+          <h1 class="header__title heading-1" data-aos="fade-left">
             Aquí encontrarás todo lo necesario para convertirte en un trader
             profesional desde el conocimiento y la experiencia
           </h1>
@@ -48,7 +50,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="company u-margin-sides-short">
+      <section class="company u-margin-sides-short" data-aos="zoom-in">
         <h3 class="company__text u-font-secondary heading-2">Reconocido en</h3>
         <div class="company__logos">
           <figure class="company__logo">
@@ -81,7 +83,7 @@
           </figure>
         </div>
       </section>
-      <section class="about">
+      <section class="about" data-aos="fade-down">
         <div class="about-info">
           <h2 class="about__title heading-2">Acerca de Trading Level Fx</h2>
           <p class="about__text">
@@ -103,7 +105,7 @@
           />
         </figure>
       </section>
-      <section class="benefit u-margin-sides-big">
+      <section class="benefit u-margin-sides-big" data-aos="fade-up">
         <h2
           class="benefit__title u-font-secondary heading-2 u-margin-bottom-medium"
         >
@@ -179,7 +181,7 @@
         <h2 class="heading-1 cta__title">
           Unete a Trading Level Fx para convertirte en un trader profesional
         </h2>
-        <a href="#" class="button button-link">Unirse</a>
+        <a href="join.html" class="button button-link">Unirse</a>
       </section>
     </main>
     <footer class="footer">
@@ -187,5 +189,9 @@
         Copyright © 2022 - Todos los derechos reservados. Trading Level Fx
       </p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
