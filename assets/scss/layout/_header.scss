@@ -32,11 +32,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    background: linear-gradient(
-      to right,
-      hsla(0, 0%, 10%, 100%) 30%,
-      hsla(0, 0%, 10%, 0%)
-    );
+    background: hsla(0, 0%, 10%, .3);
   }
   &__title {
     width: 50%;
